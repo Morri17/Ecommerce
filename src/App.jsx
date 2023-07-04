@@ -11,7 +11,7 @@ import Contacto from "./Componentes/Contacto/Contacto";
 
 const App = () => {
   return (
-    <>
+    <div className="background">
       <BrowserRouter>
         <Header />
 
@@ -24,7 +24,7 @@ const App = () => {
           <Route path="*" element={<h2>sitio en construccion</h2>} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 };
 

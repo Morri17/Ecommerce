@@ -12,32 +12,27 @@ const ItemListContainer = () => {
   console.log(categoria);
 
   useEffect(() => {
-    getProductos()
-    .then((res) =>{
-      if(categoria){
-        setProductos( res.filter((prod) => prod.categoria === categoria));
-      } else{
-        setProductos(res)
+    getProductos().then((res) => {
+      if (categoria) {
+        setProductos(res.filter((prod) => prod.categoria === categoria));
+      } else {
+        setProductos(res);
       }
-    })
- 
+    });
   }, [categoria]);
-  
 
   return (
     <>
-      <Card className="card">
-        <Card.Body className="text-card">asdasdadsklasakdl</Card.Body>
-      </Card>
-       <ItemList productos={productos} />
+      <div className="titulo">Compra tus mejores prendas aqui</div>
+
+      <ItemList productos={productos} />
     </>
   );
 };
 
 export default ItemListContainer;
 
-
 //const funcion = categoria ? getProductoPorCategoria : getProductos;
 
-  //    funcion(categoria)
-   //       .then(res => setProductos(res));
+//    funcion(categoria)
+//       .then(res => setProductos(res));

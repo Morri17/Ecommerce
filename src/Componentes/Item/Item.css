@@ -1,3 +1,7 @@
 .container {
   display: flex !important;
-}
+};
+.imagen {
+  width: 100%;
+  height: auto;
+};

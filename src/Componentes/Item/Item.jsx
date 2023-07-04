@@ -10,12 +10,12 @@ const Item = ({ id, nombre, idCat, precio, img }) => {
       <Container>
         <Card style={{ width: "15rem" }}>
           <Card.Body>
-            <CardImg img src={img} alt=""></CardImg>
+            <CardImg className="imagen" img src={img} alt=""></CardImg>
             <hr />
             <Card.Title>{nombre}</Card.Title>
             <Card.Text>${precio}</Card.Text>
             <Card.Text>Descripcion del producto</Card.Text>
-            <Link to={`/item/${id}`} > Ver Detalles </Link>
+            <Link className="ver-detalles" to={`/item/${id}`} > Ver Detalles </Link>
           </Card.Body>
         </Card>
       </Container>

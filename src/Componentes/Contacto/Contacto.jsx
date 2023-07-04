@@ -3,6 +3,7 @@ import "./Contacto.css";
 
 const Contacto = () => {
   return (
+    <div className="containerMadre">
     <div className="contacto-container">
       <h2>Contacto</h2>
       <form>
@@ -20,6 +21,7 @@ const Contacto = () => {
         </div>
         <button type="submit">Enviar</button>
       </form>
+    </div>
     </div>
   );
 };
