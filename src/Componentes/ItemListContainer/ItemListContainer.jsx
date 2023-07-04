@@ -5,26 +5,39 @@ import Card from "react-bootstrap/Card";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
-  const {idCategoria} = useParams();
-  console.log(idCategoria);
+
+  const categoria = useParams().categoria;
+  console.log(categoria);
 
   useEffect(() => {
-    const funcion = idCategoria ? getProductoPorCategoria : getProductos;
-
-    funcion(idCategoria).then((res) => setProductos(res));
-    console.log(idCategoria);
-  }, [idCategoria]);
+    getProductos()
+    .then((res) =>{
+      if(categoria){
+        setProductos( res.filter((prod) => prod.categoria === categoria));
+      } else{
+        setProductos(res)
+      }
+    })
+ 
+  }, [categoria]);
+  
 
   return (
     <>
       <Card className="card">
         <Card.Body className="text-card">asdasdadsklasakdl</Card.Body>
       </Card>
-      <ItemList productos={productos} />
+       <ItemList productos={productos} />
     </>
   );
 };
 
 export default ItemListContainer;
+
+
+//const funcion = categoria ? getProductoPorCategoria : getProductos;
+
+  //    funcion(categoria)
+   //       .then(res => setProductos(res));

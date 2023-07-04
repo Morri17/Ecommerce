@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 
-const Item = ({ idCat, id, nombre, precio, img }) => {
+const Item = ({ id, nombre, idCat, precio, img }) => {
   return (
     <>
       <Container>
