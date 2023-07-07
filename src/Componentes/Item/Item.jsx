@@ -10,7 +10,7 @@ const Item = ({ id, nombre, precio, img }) => {
         <Card style={{ width: "15rem" }}>
           <Card.Body>
             
-            <CardImg className="imagen" img src={img} alt=""></CardImg>
+            <CardImg className="imagen" img src={img} alt={nombre}></CardImg>
             <hr />
             <Card.Title>{nombre}</Card.Title>
             <Card.Text>${precio}</Card.Text>
