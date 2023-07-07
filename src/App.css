@@ -1,3 +1,7 @@
+
 .background{
-    background: linear-gradient(to bottom, #65def3, #074952c5);
+    background:
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

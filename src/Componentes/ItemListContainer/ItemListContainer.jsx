@@ -1,25 +1,22 @@
 import { useState, useEffect } from "react";
 import "./ItemListContainer.css";
 import { getProductos, getProductoPorCategoria } from "../../asyncmock";
-import Card from "react-bootstrap/Card";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
 
-  const categoria = useParams().categoria;
-  console.log(categoria);
+  const { categoria } = useParams();
 
-  useEffect(() => {
-    getProductos().then((res) => {
-      if (categoria) {
-        setProductos(res.filter((prod) => prod.categoria === categoria));
-      } else {
-        setProductos(res);
-      }
-    });
-  }, [categoria]);
+    useEffect(() => {
+        const funcion = categoria ? getProductoPorCategoria : getProductos;
+
+        funcion(categoria)
+            .then(res => setProductos(res))
+
+    }, [categoria])
+
 
   return (
     <>
@@ -32,7 +29,18 @@ const ItemListContainer = () => {
 
 export default ItemListContainer;
 
-//const funcion = categoria ? getProductoPorCategoria : getProductos;
 
-//    funcion(categoria)
-//       .then(res => setProductos(res));
+
+// otra forma de poder hacer el filtrado por categorias.
+/*const categoria = useParams().categoria;
+console.log(categoria);
+
+useEffect(() => {
+  getProductos().then((res) => {
+    if (categoria) {
+      setProductos(res.filter((prod) => prod.categoria === categoria));
+    } else {
+      setProductos(res);
+    }
+  });
+}, [categoria]); */

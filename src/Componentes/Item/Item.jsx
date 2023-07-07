@@ -1,15 +1,15 @@
 import Card from "react-bootstrap/Card";
 import CardImg from "react-bootstrap/CardImg";
 import Container from "react-bootstrap/Container";
-import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
 
-const Item = ({ id, nombre, idCat, precio, img }) => {
+const Item = ({ id, nombre, precio, img }) => {
   return (
     <>
       <Container>
         <Card style={{ width: "15rem" }}>
           <Card.Body>
+            
             <CardImg className="imagen" img src={img} alt=""></CardImg>
             <hr />
             <Card.Title>{nombre}</Card.Title>
