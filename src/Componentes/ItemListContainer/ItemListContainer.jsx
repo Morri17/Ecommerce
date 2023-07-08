@@ -9,27 +9,23 @@ const ItemListContainer = () => {
 
   const { categoria } = useParams();
 
-    useEffect(() => {
-        const funcion = categoria ? getProductoPorCategoria : getProductos;
+  useEffect(() => {
+    const funcion = categoria ? getProductoPorCategoria : getProductos;
 
-        funcion(categoria)
-            .then(res => setProductos(res))
-
-    }, [categoria])
-
+    funcion(categoria).then((res) => setProductos(res));
+  }, [categoria]);
 
   return (
     <>
       <div className="titulo">Compra tus mejores prendas aqui</div>
-
-      <ItemList productos={productos} />
+      <div>
+        <ItemList productos={productos} />
+      </div>
     </>
   );
 };
 
 export default ItemListContainer;
-
-
 
 // otra forma de poder hacer el filtrado por categorias.
 /*const categoria = useParams().categoria;

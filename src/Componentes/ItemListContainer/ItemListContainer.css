@@ -4,14 +4,16 @@
   margin: 5px;
   padding: 15px;
   text-align: center;
-  color: #1f1f1f !important;
-  background-color: rgb(233, 233, 233) !important;
+  color: #383838 !important;
+  background-color:rgb(248, 248, 248) !important;
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 .card:hover {
-  background-color: rgba(13, 248, 229, 0.219) !important; /* Cambia el color de fondo al hacer hover */
+    border-color: rgb(6, 16, 44) !important; /* Cambia el color de fondo al hacer hover */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.849);
+    border: 2px solid rgba(255, 255, 255, 0.849);
+    
   }
 
 .titulo{

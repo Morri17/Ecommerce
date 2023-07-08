@@ -1,7 +1,33 @@
-.container {
-  display: flex !important;
-};
-.imagen {
+.card-body {
+  padding: 1rem;
+}
+.img-fluid {
   width: 100%;
   height: auto;
-};
+  margin-bottom: 1rem;
+  background-color: transparent;
+  mix-blend-mode: multiply;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  margin-bottom: 0.5rem;
+}
+
+.ver-detalles {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ver-detalles:hover {
+  background-color: #0056b3;
+}

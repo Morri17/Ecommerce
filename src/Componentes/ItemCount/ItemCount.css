@@ -1,0 +1,66 @@
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100px;
+  margin-bottom: 100px;
+}
+.boton-incrementar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #555555;
+}
+
+.boton-decrementar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #555555;
+}
+
+.boton:hover {
+  background-color: #f2f2f2;
+}
+
+.numero-contador {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px;
+  color: #000000;
+}
+.agregar-carrito {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  background-color: #07263fda;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #e2e2e2;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.agregar-carrito:hover {
+  background-color: #1f5bca;
+  border: 2px solid #e4e4e4;
+}
