@@ -1,5 +1,5 @@
 import campera from "./assets/Imagenes/campera.webp";
-import campera2 from "./assets/Imagenes/campera2.webp";
+import campera2 from "./assets/Imagenes/Campera2.webp";
 import campera3 from "./assets/Imagenes/campera3.webp";
 import campera4 from "./assets/Imagenes/campera4.jpeg";
 import buzo from "./assets/Imagenes/buzo.jpg";
