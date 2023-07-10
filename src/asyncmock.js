@@ -19,7 +19,7 @@ const misProductos = [
   {
     id: "1",
     nombre: "Camperas",
-    precio: 500,
+    precio: 5000,
     img: campera,
     categoria: "camperas",
   },
