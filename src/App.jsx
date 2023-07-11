@@ -10,6 +10,7 @@ import Contacto from "./Componentes/Contacto/Contacto";
 import Cart from "./Componentes/Cart/Cart";
 import { CarritoProvider } from "./Context/CarritoContex";
 import background from "../src/assets/Imagenes/background.jpg";
+import Footer from "./Componentes/Footer/Footer";
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
             <Route path="/item/:idItem" element={<ItemDetailContainer />} />
             <Route path="*" element={<h2>sitio en construccion</h2>} />
           </Routes>
+          <Footer/>
         </CarritoProvider>
       </BrowserRouter>
     </div>
