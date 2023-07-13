@@ -8,9 +8,7 @@ const CartItem = ({ item, cantidad, }) => {
   return (
     <div className="cart-item">
       <h4> {item.nombre} </h4>
-      <h2>
-        <img src={item.img} alt="" />
-      </h2>
+      <img src={item.img} alt="no se pudo cargar la imagen del item" />
       <p> Cantidad: {cantidad} </p>
       <p> Precio: {item.precio} </p>
       <button onClick={() => eliminarProducto(item.id)}> Eliminar </button>

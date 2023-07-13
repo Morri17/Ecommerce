@@ -1,8 +1,6 @@
-//1) Voy a importar el hook useState y createContext que me permite crear un contexto que almacenará toda la lógica de mi carrillo de compras. 
 
 import { useState, createContext } from "react";
 
-//2) Creamos un nuevo contexto: 
 
 export const CarritoContext = createContext({
     carrito: [],
@@ -10,10 +8,7 @@ export const CarritoContext = createContext({
     cantidadTotal: 0
 })
 
-//El valor inicial es un objeto con la propiedad "carrito", "total" y "cantidadTotal";
-
 export const CarritoProvider = ({children}) => {
-    //3) Creamos un estado local llamado "carrito" con useState. 
 
     const [carrito, setCarrito] = useState([]);
     const [total, setTotal] = useState(0);

@@ -35,7 +35,6 @@ const App = () => {
           <Header />
 
           <Routes>
-            <Route path="contacto" element={<Contacto />} />
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/productos" element={<ItemListContainer />} />
             <Route
@@ -44,6 +43,7 @@ const App = () => {
             />
             <Route path="/cart" element={<Cart />} />
             <Route path="/item/:idItem" element={<ItemDetailContainer />} />
+            <Route path="contacto" element={<Contacto />} />
             <Route path="*" element={<h2>sitio en construccion</h2>} />
           </Routes>
           <Footer/>
