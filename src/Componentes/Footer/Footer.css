@@ -1,15 +1,16 @@
 .footer {
   position: fixed;
-  right: 25px;
-  bottom: 25px;
-  text-align: center; /* Cambiado a "center" para centrar los elementos */
-  background: rgba(212, 206, 206, 0.7);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.445);
   padding: 10px 40px;
-  border-radius: 32px;
-  opacity: 0.95;
+  border-top: solid 1px rgb(255, 255, 255);
+  opacity: 0.95;  
   backdrop-filter: blur(8px);
+  z-index: 9999; /* Asegura que el footer esté por encima del contenido */
 }
-
 
 .footer span {
   font-size: 14px;
@@ -20,27 +21,26 @@
 .footer h4,
 .footer h5 {
   margin: 0;
-  display: inline; /* Cambiado a "inline" para alinear horizontalmente */
+  display: inline;
 }
 
 .social-icons {
   margin-top: 15px;
-  display: flex; /* Agregado para alinear los íconos horizontalmente */
-  justify-content: center; /* Agregado para centrar los íconos horizontalmente */
+  display: flex;
+  justify-content: center;
 }
 
 .social-icons a {
-  display: inline-block; /* Cambiado a "inline-block" para que se aplique el margin-right */
-  text-align: center;
-  justify-content: center;
+  display: inline-block;
+  text-align: right;
   margin-right: 20px;
-  color: #555;
+  color: #4e4e4e;
   font-size: 15px;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Estilos específicos para dispositivos móviles */
