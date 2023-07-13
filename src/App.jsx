@@ -11,6 +11,8 @@ import Cart from "./Componentes/Cart/Cart";
 import { CarritoProvider } from "./Context/CarritoContex";
 import background from "../src/assets/Imagenes/background.jpg";
 import Footer from "./Componentes/Footer/Footer";
+import Productos from "./Componentes/Productos/Productos";
+import Formulario from "./Componentes/Formulario/Formulario";
 
 const App = () => {
   return (

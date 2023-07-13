@@ -1,44 +1,59 @@
 .footer {
-    margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.26);
-    padding: 25px;
-    text-align: center;
-  }
-  
-  .footer-content {
-    color: #2b2b2b;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  text-align: center; /* Cambiado a "center" para centrar los elementos */
+  background: rgba(212, 206, 206, 0.7);
+  padding: 10px 40px;
+  border-radius: 32px;
+  opacity: 0.95;
+  backdrop-filter: blur(8px);
+}
 
+
+.footer span {
+  font-size: 14px;
+  color: #09f;
+  opacity: 0.8;
+}
+
+.footer h4,
+.footer h5 {
+  margin: 0;
+  display: inline; /* Cambiado a "inline" para alinear horizontalmente */
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex; /* Agregado para alinear los íconos horizontalmente */
+  justify-content: center; /* Agregado para centrar los íconos horizontalmente */
+}
+
+.social-icons a {
+  display: inline-block; /* Cambiado a "inline-block" para que se aplique el margin-right */
+  text-align: center;
+  justify-content: center;
+  margin-right: 20px;
+  color: #555;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #000000;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 767px) {
+  .footer {
+    padding: 10px;
   }
-  
+
   .social-icons {
-    margin-top: 25px;
-  }
-  
-  .social-icons a {
-    display: inline-block;
-    margin-right: 20px;
-    color: #555;
-    font-size: 25px;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-    color: #000000;
+    margin-top: 10px;
   }
 
-  
-  /* Estilos específicos para dispositivos móviles */
-  @media (max-width: 767px) {
-    .footer {
-      padding: 10px;
-    }
-    
-    .social-icons {
-      margin-top: 10px;
-    }
-    
-    .social-icons a {
-      font-size: 18px;
-    }
+  .social-icons a {
+    font-size: 18px;
   }
-  
+}

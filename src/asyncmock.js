@@ -22,6 +22,7 @@ const misProductos = [
     precio: 5000,
     img: campera,
     categoria: "camperas",
+    stock: 10,
   },
   {
     id: "2",
@@ -29,6 +30,7 @@ const misProductos = [
     precio: 200,
     img: campera2,
     categoria: "camperas",
+    stock: 10,
   },
   {
     id: "3",
@@ -36,6 +38,7 @@ const misProductos = [
     precio: 180,
     img: campera3,
     categoria: "camperas",
+    stock: 10,
   },
   {
     id: "4",
@@ -43,6 +46,7 @@ const misProductos = [
     precio: 900,
     img: campera4,
     categoria: "camperas",
+    stock: 10,
   },
 
   {
@@ -51,6 +55,7 @@ const misProductos = [
     precio: 500,
     img: remera,
     categoria: "remeras",
+    stock: 10,
   },
   {
     id: "6",
@@ -58,6 +63,7 @@ const misProductos = [
     precio: 200,
     img: remera2,
     categoria: "remeras",
+    stock: 10,
   },
   {
     id: "7",
@@ -65,6 +71,7 @@ const misProductos = [
     precio: 180,
     img: remera3,
     categoria: "remeras",
+    stock: 10,
   },
   {
     id: "8",
@@ -72,12 +79,13 @@ const misProductos = [
     precio: 900,
     img: remera4,
     categoria: "remeras",
+    stock: 10,
   },
 
-  { id: "9", nombre: "Buzos", precio: 500, img: buzo, categoria: "buzos" },
-  { id: "10", nombre: "Buzos", precio: 200, img: buzo2, categoria: "buzos" },
-  { id: "11", nombre: "Buzos", precio: 180, img: buzo3, categoria: "buzos" },
-  { id: "12", nombre: "Buzos", precio: 900, img: buzo4, categoria: "buzos" },
+  { id: "9", nombre: "Buzos", precio: 500, img: buzo, categoria: "buzos", stock: 10},
+  { id: "10", nombre: "Buzos", precio: 200, img: buzo2, categoria: "buzos", stock: 10 },
+  { id: "11", nombre: "Buzos", precio: 180, img: buzo3, categoria: "buzos", stock: 10 },
+  { id: "12", nombre: "Buzos", precio: 900, img: buzo4, categoria: "buzos", stock: 10 },
 
   {
     id: "13",
@@ -85,6 +93,7 @@ const misProductos = [
     precio: 500,
     img: pantalones4,
     categoria: "pantalones",
+    stock: 10,
   },
   {
     id: "14",
@@ -92,6 +101,7 @@ const misProductos = [
     precio: 200,
     img: pantalones3,
     categoria: "pantalones",
+    stock: 10,
   },
   {
     id: "15",
@@ -99,6 +109,7 @@ const misProductos = [
     precio: 180,
     img: pantalones2,
     categoria: "pantalones",
+    stock: 10,
   },
   {
     id: "16",
@@ -106,6 +117,7 @@ const misProductos = [
     precio: 900,
     img: pantalones,
     categoria: "pantalones",
+    stock: 10,
   },
 ];
 
