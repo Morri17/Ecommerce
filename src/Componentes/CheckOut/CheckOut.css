@@ -1,4 +1,10 @@
 
+.text-completar{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .checkout-container {
     font-weight: lighter;
     background-color: #c7c7c7bd;
@@ -10,7 +16,7 @@
   }
   
   .form-group {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     max-width: 600px;
   }
   
@@ -38,6 +44,15 @@
   
   button:hover {
     background-color: #0056b3;
+  }
+
+  .ordenID{
+        line-height: 30px;
+        font-size: 24px;
+        font-weight: bold; 
+        color: #300cff; 
+        text-align: center; 
+        margin: 10px 0; 
   }
   
   .error-message {

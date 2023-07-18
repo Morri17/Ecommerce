@@ -58,9 +58,8 @@ const Checkout = () => {
 
   return (
     <div className="checkout-container">
-      <h2>Completar datos para finalizar la compra.</h2>
+      <h2 className="text-completar">Completa los datos para finalizar la compra.</h2>
       <form onSubmit={manejadorFormulario}>
-        {/* Resto del formulario con estilos personalizados */}
         <div className="form-group">
           <label htmlFor="nombre">Nombre</label>
           <input
@@ -83,7 +82,7 @@ const Checkout = () => {
         <div className="form-group">
           <label htmlFor=""> Telefono </label>
           <input
-            type="text"
+            type="numer"
             value={telefono}
             onChange={(e) => setTelefono(e.target.value)}
           />
@@ -114,7 +113,7 @@ const Checkout = () => {
         <button type="submit">Finalizar Compra</button>
       </form>
       {ordenId && (
-        <strong>¡Gracias por tu compra! Tu número de orden es {ordenId}</strong>
+        <p className="ordenID">¡Gracias por tu compra! Tu número de orden es: {ordenId}</p>
       )}
     </div>
   );
