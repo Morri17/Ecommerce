@@ -1,15 +1,16 @@
+
 .footer {
-  position: end;
-  left: 0;
-  right: 0;
+  background: rgba(104, 104, 104, 0.336);
+  padding: 10px;
+  position: fixed;
   bottom: 0;
+  width: 99%;
+  border-top: solid 2px rgba(255, 255, 255, 0.63);
+  opacity: 1;  
   text-align: center;
-  background: rgba(255, 255, 255, 0.445);
-  padding: 10px 40px;
-  border-top: solid 1px rgb(255, 255, 255);
-  opacity: 0.95;  
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px);
 }
+
 
 .footer span {
   font-size: 14px;

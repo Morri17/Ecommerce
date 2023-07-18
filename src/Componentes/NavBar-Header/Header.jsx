@@ -4,14 +4,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link, NavLink } from "react-router-dom";
-import Contacto from "../Contacto/Contacto";
 
 const Header = () => {
   return (
-    <Navbar bg="Light" expand="lg">
-      <Container>
+    <Navbar className="header-container" bg="Light" expand="lg">
+      <Container >
         <Navbar.Brand as={Link} to="/">
-          THE NORTH FACE
+          SHOP | THE NORTH FACE 
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -33,9 +32,6 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link as={Link} to="/productos/pantalones">
               Pantalones
-            </Nav.Link>
-            <Nav.Link as={Link} to="/contacto">
-              Contacto
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

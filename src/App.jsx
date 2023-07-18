@@ -1,18 +1,14 @@
-// JSX = ES UNA EXTENSION DE JS.
-// import ItemCount from "./Componentes/ItemCount/ItemCount";
 import ItemListContainer from "./Componentes/ItemListContainer/ItemListContainer";
 import Header from "./Componentes/NavBar-Header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import ItemDetailContainer from "./Componentes/ItemDetailContaniner/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Contacto from "./Componentes/Contacto/Contacto";
 import Cart from "./Componentes/Cart/Cart";
 import { CarritoProvider } from "./Context/CarritoContex";
 import background from "../src/assets/Imagenes/background.jpg";
 import Footer from "./Componentes/Footer/Footer";
-import Productos from "./Componentes/Productos/Productos";
-import Formulario from "./Componentes/Formulario/Formulario";
+import CheckOut from "./Componentes/CheckOut/CheckOut";
 
 const App = () => {
   return (
@@ -27,7 +23,7 @@ const App = () => {
         position: "relative",
         top: 0,
         left: 0,
-        overflowY: 'scroll'
+        overflowY: "scroll",
       }}
     >
       <BrowserRouter>
@@ -43,11 +39,12 @@ const App = () => {
             />
             <Route path="/cart" element={<Cart />} />
             <Route path="/item/:idItem" element={<ItemDetailContainer />} />
-            <Route path="contacto" element={<Contacto />} />
+
             <Route path="*" element={<h2>sitio en construccion</h2>} />
+            <Route path="/checkout" element={<CheckOut />}></Route>
           </Routes>
-          <Footer/>
         </CarritoProvider>
+        <Footer />
       </BrowserRouter>
     </div>
   );

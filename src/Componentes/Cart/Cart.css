@@ -22,7 +22,6 @@
   border-radius: 4px;
 }
 
-/* Estilos para todos los botones */
 button {
   display: inline-block;
   padding: 10px 20px;
@@ -38,18 +37,23 @@ button {
 }
 
 .vaciar-carrito {
-  background-color: #91919185;
+  background-color: #f3f2f29c;
   color: #2c2c2c;
+  border: 2px solid white;
 }
 
+.vaciar-carrito:hover {
+  background-color: #ff0101;
+  color: #ffffff;
+}
 
 .finalizar-compra {
-  background-color: #91919185;
-  color: #2c2c2c;
+  background-color: #f3f2f29c;
+  color: #e2e2e2;
+  border: 2px solid white;
 }
 
-button:hover {
-  background-color: #e02f23;
-  color: #ffffff;
-  border-color: #444546;
+.finalizar-compra:hover {
+  background-color: #fcfcfc;
+  border: 2px solid rgb(88, 87, 87);
 }

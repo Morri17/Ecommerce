@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { CarritoContext } from "../../Context/CarritoContex";
 import "./CartItem.css";
 
-const CartItem = ({ item, cantidad, }) => {
+const CartItem = ({ item, cantidad }) => {
   const { eliminarProducto } = useContext(CarritoContext);
 
   return (
