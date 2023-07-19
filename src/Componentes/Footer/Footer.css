@@ -46,14 +46,14 @@
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 767px) {
   .footer {
-    padding: 20px;
+    padding: 2px;
   }
 
   .social-icons {
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .social-icons a {
-    font-size: 18px;
+    font-size: 8px;
   }
 }
