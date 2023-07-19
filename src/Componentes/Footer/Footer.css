@@ -1,21 +1,21 @@
 
 .footer {
-  background: rgba(104, 104, 104, 0.336);
-  padding: 10px;
+  background: rgba(227, 228, 230, 0.5);
+  padding: 5px;
   position: fixed;
   bottom: 0;
-  width: 99%;
-  border-top: solid 2px rgba(255, 255, 255, 0.63);
-  opacity: 1;  
+  width: 100%;
+  border-top: solid 2px rgba(255, 255, 255, 0.466);
+  opacity: 0.8;  
   text-align: center;
   backdrop-filter: blur(5px);
 }
 
-
-.footer span {
-  font-size: 14px;
-  color: #09f;
-  opacity: 0.8;
+.footer-content{
+  font-size: 16px;
+  font-weight: lighter;
+  color: #4e4e4e;
+  margin-bottom: 5px;
 }
 
 .footer h4,
@@ -25,7 +25,7 @@
 }
 
 .social-icons {
-  margin-top: 15px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
 }
@@ -35,12 +35,12 @@
   text-align: right;
   margin-right: 20px;
   color: #4e4e4e;
-  font-size: 15px;
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 /* Estilos específicos para dispositivos móviles */

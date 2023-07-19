@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p> © 2023 M0rri. @lucas.bartomioli</p>
+        <p> © Morri 2023. @lucas.bartomioli</p>
         <div className="social-icons">
           <a
             href="https://www.linkedin.com/"
