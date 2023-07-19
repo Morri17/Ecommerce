@@ -1,12 +1,12 @@
 
 .footer {
-  background: rgba(227, 228, 230, 0.5);
+  background: rgba(216, 216, 216, 0.733);
   padding: 5px;
   position: fixed;
   bottom: 0;
   width: 100%;
   border-top: solid 2px rgba(255, 255, 255, 0.466);
-  opacity: 0.8;  
+  opacity: 1;  
   text-align: center;
   backdrop-filter: blur(5px);
 }
@@ -50,10 +50,10 @@
   }
 
   .social-icons {
-    margin-top: 8px;
+    margin-top: 15px;
   }
 
   .social-icons a {
-    font-size: 8px;
+    font-size: 15px;
   }
 }
