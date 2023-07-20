@@ -44,7 +44,6 @@ const App = () => {
             <Route path="/checkout" element={<CheckOut />}></Route>
           </Routes>
         </CarritoProvider>
-        <Footer />
       </BrowserRouter>
     </div>
   );
