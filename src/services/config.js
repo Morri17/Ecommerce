@@ -1,12 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-//esta funcion se usa para conectarnos con firebase
-//getfirestore se usa para tener un instancia del firestore.
-
-//Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBwAJvy4wRIXDbEa1CVNSPtPw6I6hrT7As",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "primerecommerce-ec24d.firebaseapp.com",
   projectId: "primerecommerce-ec24d",
   storageBucket: "primerecommerce-ec24d.appspot.com",
@@ -17,4 +13,3 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app);
-//debemos exportar la referencia para que este disponible en toda la app

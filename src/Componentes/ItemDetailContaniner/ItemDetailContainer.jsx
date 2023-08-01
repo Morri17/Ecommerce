@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getUnProducto } from "../../asyncmock";
+// import { getUnProducto } from "../../EsSoloParaTestAsyncmock";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { getDoc, doc } from "firebase/firestore";
@@ -20,10 +20,6 @@ const ItemDetailContainer = () => {
       })
       .catch((error) => console.log(error));
   }, [idItem]);
-
-  /*  useEffect(() => {
-    getUnProducto(idItem).then((res) => setProducto(res));
-  }, [idItem]); */
 
   return (
     <div>
