@@ -5,8 +5,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link, NavLink } from "react-router-dom";
 import Login from "../Loging/Login";
-import Profile from "../Profile/Profile";
-import LogOut from "../Loging/LogOut";
 
 const Header = () => {
   return (
@@ -18,11 +16,8 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/">
-              Inicio
-            </Nav.Link>
             <Nav.Link as={Link} to="/productos">
-              Productos
+              Todos los productos
             </Nav.Link>
             <Nav.Link as={Link} to="/productos/camperas">
               Camperas
@@ -40,7 +35,6 @@ const Header = () => {
         </Navbar.Collapse>
         <CartWidget />
         <Login/>
-        <Profile/>
       </Container>
     </Navbar>
   );
