@@ -12,8 +12,10 @@ const CartWidget = () => {
         <img className="imgCarrito" src={imgCarrito} alt="carrito de compras" />
         {cantidadTotal > 0 && <strong> {cantidadTotal} </strong>}
       </Link>
+      
     </div>
   );
 };
 
 export default CartWidget;
+

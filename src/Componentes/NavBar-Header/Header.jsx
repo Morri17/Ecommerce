@@ -4,6 +4,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link, NavLink } from "react-router-dom";
+import Login from "../Loging/Login";
+import Profile from "../Profile/Profile";
+import LogOut from "../Loging/LogOut";
 
 const Header = () => {
   return (
@@ -36,6 +39,8 @@ const Header = () => {
           </Nav>
         </Navbar.Collapse>
         <CartWidget />
+        <Login/>
+        <Profile/>
       </Container>
     </Navbar>
   );

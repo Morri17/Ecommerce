@@ -1,13 +1,11 @@
 import ItemListContainer from "./Componentes/ItemListContainer/ItemListContainer";
 import Header from "./Componentes/NavBar-Header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
 import ItemDetailContainer from "./Componentes/ItemDetailContaniner/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./Componentes/Cart/Cart";
 import { CarritoProvider } from "./Context/CarritoContex";
 import background from "../src/assets/Imagenes/background.jpg";
-import Footer from "./Componentes/Footer/Footer";
 import CheckOut from "./Componentes/CheckOut/CheckOut";
 
 const App = () => {
@@ -44,7 +42,6 @@ const App = () => {
             <Route path="/checkout" element={<CheckOut />}></Route>
           </Routes>
         </CarritoProvider>
-        <Footer />
       </BrowserRouter>
     </div>
   );
