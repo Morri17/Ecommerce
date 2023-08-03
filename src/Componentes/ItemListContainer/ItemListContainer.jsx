@@ -38,17 +38,3 @@ useEffect(() => {
 };
 
 export default ItemListContainer;
-
-// otra forma de poder hacer el filtrado por categorias.
-/*const categoria = useParams().categoria;
-console.log(categoria);
-
-useEffect(() => {
-  getProductos().then((res) => {
-    if (categoria) {
-      setProductos(res.filter((prod) => prod.categoria === categoria));
-    } else {
-      setProductos(res);
-    }
-  });
-}, [categoria]); */

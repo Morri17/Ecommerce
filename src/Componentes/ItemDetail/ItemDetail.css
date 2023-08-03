@@ -1,7 +1,7 @@
 .container-detalle {
   display: flex;
-  flex-wrap: wrap; /* Agregado para envolver los elementos en dispositivos pequeños */
-  justify-content: center; /* Cambiado a "center" para centrar los elementos */
+  flex-wrap: wrap; 
+  justify-content: center; 
   align-items: flex-start;
   background-color: #ffffff7a;
   padding: 20px;
@@ -14,7 +14,7 @@
   height: auto;
   object-fit: cover;
   border-radius: 4px;
-  margin-right: 20px; /* Agregado para separar la imagen del contenido en dispositivos grandes */
+  margin-right: 20px; 
 }
 
 .details {
@@ -54,15 +54,15 @@
   background-color: #333;
 }
 
-/* Estilos específicos para dispositivos móviles */
+
 @media (max-width: 767px) {
   .container-detalle {
     padding: 10px;
   }
 
   .image {
-    width: 100%; /* Cambiado para que la imagen ocupe todo el ancho disponible */
-    margin-right: 0; /* Eliminado el margen derecho para dispositivos móviles */
-    margin-bottom: 10px; /* Agregado margen inferior para separar la imagen del contenido en dispositivos pequeños */
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 10px; 
   }
 }

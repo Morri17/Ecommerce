@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 .card:hover {
-  border-color: #2f27a3 !important; /* Cambia el color de fondo al hacer hover */
+  border-color: #2f27a3 !important;
   box-shadow: 0px 2px 4px rgba(71, 71, 71, 0.973);
   border: 2px solid #646464d2;
 }
